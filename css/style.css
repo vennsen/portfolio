@@ -185,6 +185,10 @@ body[data-theme="light"] .nav-title {
   color: var(--text-muted);
   cursor: pointer;
   font-size: 12px;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
 }
 
