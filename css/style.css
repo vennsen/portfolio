@@ -525,6 +525,12 @@ body[data-theme="light"] .profile-card {
   background: rgba(15,23,42,0.9);
 }
 
+body[data-theme="light"] .profile-tag {
+  background: rgba(241,245,249,0.95);
+  color: #0f172a;
+  border-color: rgba(148,163,184,0.5);
+}
+
 .profile-status {
   font-size: 11px;
   color: #bbf7d0;
@@ -537,12 +543,23 @@ body[data-theme="light"] .profile-card {
   gap: 6px;
 }
 
+body[data-theme="light"] .profile-status {
+  color: #166534;
+  background: rgba(220,252,231,0.9);
+  border-color: rgba(34,197,94,0.35);
+}
+
 .profile-status-dot {
   width: 7px;
   height: 7px;
   border-radius: 999px;
   background: radial-gradient(circle at 30% 30%, #fefce8, #22c55e);
   box-shadow: 0 0 16px rgba(34,197,94,0.8);
+}
+
+body[data-theme="light"] .profile-status-dot {
+  background: radial-gradient(circle at 30% 30%, #dcfce7, #16a34a);
+  box-shadow: 0 0 12px rgba(22,163,74,0.55);
 }
 
 .profile-body {
@@ -617,6 +634,10 @@ body[data-theme="light"] .profile-card {
   font-size: 11px;
   color: #e5e7eb;
   margin-bottom: 10px;
+}
+
+body[data-theme="light"] .profile-highlight {
+  color: #1f2937;
 }
 
 .profile-mini-grid {
@@ -808,6 +829,12 @@ body[data-theme="light"] section {
   background: rgba(15,23,42,0.96);
 }
 
+body[data-theme="light"] .exp-tag {
+  color: #4338ca;
+  background: rgba(238,242,255,0.95);
+  border-color: rgba(99,102,241,0.45);
+}
+
 .exp-role {
   font-size: 11px;
   color: var(--text-muted);
@@ -842,6 +869,20 @@ body[data-theme="light"] section {
   gap: 6px;
 }
 
+body[data-theme="light"] .exp-bullet-list {
+  color: #1f2937;
+}
+
+body[data-theme="light"] .exp-bullet-list li {
+  color: #1f2937;
+}
+
+.exp-bullet-list li {
+  margin-bottom: 4px;
+  display: flex;
+  gap: 6px;
+}
+
 .exp-bullet-dot {
   width: 5px;
   height: 5px;
@@ -849,6 +890,12 @@ body[data-theme="light"] section {
   background: linear-gradient(to bottom right, var(--accent), var(--accent-2));
   margin-top: 5px;
   flex-shrink: 0;
+}
+
+body[data-theme="light"] .exp-bullet-dot {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 8px rgba(14,165,233,0.28);
+  border: 1px solid rgba(14,165,233,0.25);
 }
 
 body[data-theme="light"] .exp-card {
@@ -990,6 +1037,15 @@ body[data-theme="light"] .project-desc {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  width: 100%;
+}
+
+.skills-layout > div:first-child {
+  grid-column: 1 / -1;
+}
+
+.skills-columns {
+  grid-column: 1 / -1;
 }
 
 .skill-pill {
@@ -1106,6 +1162,10 @@ body[data-theme="light"] .skills-columns ul {
   font-size: 12px;
   color: #e5e7eb;
   word-break: break-all;
+}
+
+body[data-theme="light"] .contact-value {
+  color: #0f172a;
 }
 
 .contact-link {
