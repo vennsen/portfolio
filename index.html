@@ -23,6 +23,11 @@
           <div class="nav-title">saayan.me</div>
         </div>
         <div class="nav-links">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+            <span class="theme-icon sun" aria-hidden="true">☀</span>
+            <span class="theme-icon moon" aria-hidden="true">☾</span>
+            <span class="theme-label" id="themeLabel">Dark</span>
+          </button>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
@@ -42,14 +47,15 @@
           <div>
             <div class="badge-row">
               <div class="badge-dot"></div>
-              <span>Software Engineer · Indie Game Dev Dreamer</span>
+              <span>Software Engineer · Crafting with intention</span>
             </div>
             <h1>
-              Hi, I'm <span class="name-highlight">Sayan Dutta&nbsp;Chowdhury</span>.
+              Hi, I'm <span class="name-highlight">Sayan Dutta</span>
             </h1>
             <p class="hero-subtitle">
-              Software Engineer 2 at Goldman Sachs (ex-ByteDance). I build reliable data & platform systems by day,
-              and obsess over high-fidelity action-adventure games and tools by night.
+              A Software Engineer shaping backend architectures, sculpting infrastructure, and bringing clarity through observability.
+              Now at Goldman Sachs, formerly at ByteDance.
+              On the side, I chase my creative pulse through game development.
             </p>
             <div class="hero-chips">
               <div class="chip">
@@ -58,7 +64,7 @@
               </div>
               <div class="chip">
                 <div class="chip-dot"></div>
-                Go · Java · MySQL · ClickHouse
+                Go · Java · Python · MySQL · ClickHouse
               </div>
               <div class="chip">
                 <div class="chip-dot"></div>
@@ -81,7 +87,7 @@
               </div>
               <div class="hero-meta-item">
                 <div class="hero-meta-dot"></div>
-                <span>HackWithInfy 2019 Finalist · ex-ByteHouse</span>
+                <span>HackWithInfy 2019 Finalist </span>
               </div>
             </div>
           </div>
@@ -103,7 +109,7 @@
                   <div class="profile-image-inner">
                     <!-- Default placeholder image. Replace src with any static image if you like. -->
                     <img id="profilePreview"
-                         src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=600"
+                         src="profile.jpg"
                          alt="Profile preview" />
                   </div>
                 </div>
@@ -116,7 +122,7 @@
                 </div>
                 <div class="profile-highlight">
                   I love designing systems that don’t just work, but are observable, debuggable, and fast —
-                  while secretly plotting an Indian myth-inspired action adventure game.
+                  making life easier for both users and fellow engineers.
                 </div>
 
                 <div class="profile-mini-grid">
@@ -136,9 +142,9 @@
                     LinkedIn Profile
                   </a>
                   <!-- TODO: add your GitHub URL -->
-                  <a class="link-chip" href="#" onclick="alert('Update this link in the HTML to your GitHub profile 🙂'); return false;">
+                  <a class="link-chip" href="#">
                     <span class="link-dot"></span>
-                    GitHub (add your link)
+                    GitHub
                   </a>
                 </div>
               </div>
@@ -162,19 +168,11 @@
             </div>
             <div class="exp-role">Platform & data infrastructure · Singapore</div>
             <div class="exp-meta">
-              <span>2023 — Present</span>
+              <span>2025 — Present</span>
               <span>•</span>
-              <span>Reliability, observability, MySQL pipeline</span>
+              <span>Reliability, observability</span>
             </div>
             <ul class="exp-bullet-list">
-              <li>
-                <div class="exp-bullet-dot"></div>
-                <span>Improved MySQL query logging & metrics end-to-end to make debugging fast and traceable.</span>
-              </li>
-              <li>
-                <div class="exp-bullet-dot"></div>
-                <span>Worked on gateway & audit pathways to simplify legacy components and reduce latency.</span>
-              </li>
               <li>
                 <div class="exp-bullet-dot"></div>
                 <span>Partnered across teams to design better SLOs, alerts, and dashboards for production systems.</span>
@@ -189,11 +187,19 @@
             </div>
             <div class="exp-role">Analytics database platform · Singapore</div>
             <div class="exp-meta">
-              <span>2021 — 2023</span>
+              <span>2021 — 2025</span>
               <span>•</span>
-              <span>Drivers, CLI, performance</span>
+              <span>Backend, Drivers, CLI</span>
             </div>
             <ul class="exp-bullet-list">
+              <li>
+                <div class="exp-bullet-dot"></div>
+                <span>Improved MySQL query logging & metrics end-to-end to make debugging fast and traceable.</span>
+              </li>
+              <li>
+                <div class="exp-bullet-dot"></div>
+                <span>Worked on gateway & audit pathways to simplify legacy components and reduce latency.</span>
+              </li>
               <li>
                 <div class="exp-bullet-dot"></div>
                 <span>Owned client ecosystem: Go / Java / Python / PHP / C# drivers for a ClickHouse-compatible engine.</span>
@@ -209,7 +215,7 @@
             </ul>
           </article>
 
-          <article class="exp-card">
+          <!-- <article class="exp-card">
             <div class="exp-chip-row">
               <span class="exp-company">HackWithInfy 2019 Finalist</span>
               <span class="exp-tag">Gesture Virtual Mouse</span>
@@ -253,11 +259,11 @@
                 <span>Experimenting with movement systems, camera feel, and combat pacing inspired by modern ARPGs.</span>
               </li>
             </ul>
-          </article>
+          </article> -->
         </div>
       </section>
 
-      <!-- PROJECTS -->
+      <!-- PROJECTS
       <section id="projects" class="reveal">
         <div class="section-header">
           <div class="section-title">Projects</div>
@@ -347,7 +353,7 @@
             </div>
           </article>
         </div>
-      </section>
+      </section> -->
 
       <!-- SKILLS -->
       <section id="skills" class="reveal">
@@ -375,7 +381,7 @@
               <span class="skill-pill">Unreal / Unity (Game Dev)</span>
             </div>
           </div>
-          <div class="skills-columns">
+          <!-- <div class="skills-columns">
             <div>
               <h4>Backend & Data</h4>
               <ul>
@@ -394,7 +400,7 @@
                 <li>Code review & cross-team collab</li>
               </ul>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -402,7 +408,7 @@
       <section id="contact" class="reveal">
         <div class="section-header">
           <div class="section-title">Contact</div>
-          <div class="section-kicker">Let’s build something ambitious — infra or indie-game scale.</div>
+          <div class="section-kicker">Let’s build something ambitious</div>
         </div>
 
         <div class="contact-body">
@@ -434,7 +440,7 @@
                 <div class="contact-label">Primary Email</div>
                 <div class="contact-value">
                   <!-- Update this to your actual email for live use -->
-                  <a href="mailto:hello@saayan.me" class="contact-link">hello@saayan.me</a>
+                  <a href="mailto:sdchowdhury.mars@gmail.com" class="contact-link">sdchowdhury.mars@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -460,7 +466,7 @@
             </div>
 
             <div class="contact-footer">
-              This site is a single static HTML file — easy to host on Namecheap, Netlify, or any static host.
+              <!-- This site is a single static HTML file — easy to host on Namecheap, Netlify, or any static host. -->
             </div>
           </div>
         </div>
